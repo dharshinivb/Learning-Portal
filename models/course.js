@@ -9,6 +9,7 @@ const CourseSchema = new mongoose.Schema({
   duration: { type: String, required: true }, // e.g., "27.5 total hours"
   lectures: { type: String, required: true }, // e.g., "339 lectures"
   level: { type: String, enum: ["Beginner", "Intermediate", "Advanced", "All Levels"], required: true },
+  content: { type: String, required: true },
   createdAt: { type: Date, default: Date.now }
 });
 
