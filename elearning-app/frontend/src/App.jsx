@@ -15,8 +15,9 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/home" element={<Home />}/>
-        <Route path="/user/courses" element={<ShowCourses />} />
+        <Route path="/home" element={<Home />} />
+        {/* <Route path="/courses" element={<AllCourses />}/> */}
+        {/* <Route path="/user/courses" element={<ShowCourses />} /> */}
         <Route path="/course/:id" element={<ShowCourse />} />
         <Route path="/course/create" element={<CreateCourse />} />
         <Route path="*" element={<NoPage />} />
